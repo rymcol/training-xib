@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BlueViewController.swift
 //  xib-training
 //
 //  Created by Ryan Collins on 2016-03-18.
@@ -8,10 +8,17 @@
 
 import UIKit
 
-class YellowViewController: UIViewController {
+class BlueViewController: UIViewController {
     
-    var blueVC: BlueViewController!
+    @IBOutlet weak var blueLabel: UILabel!
+    var printText = ""
     
+    convenience init(printMe: String!) {
+        self.init(nibName: "BlueViewController", bundle: nil)
+        printText = printMe
+        
+    }
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
@@ -19,10 +26,17 @@ class YellowViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        blueLabel.text = printText
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,11 +44,4 @@ class YellowViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
-    @IBAction func loadBlueView(sender: AnyObject) {
-        blueVC = BlueViewController(printMe: "I'm a string!")
-        self.presentViewController(blueVC, animated: true, completion: nil)
-    }
-
 }
-

@@ -14,7 +14,24 @@
         <view contentMode="scaleToFill" id="TAd-A5-dqE">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5B-ou-TSc">
+                    <rect key="frame" x="263" y="156" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="RBH-li-dzK"/>
+                        <constraint firstAttribute="height" constant="30" id="wzz-L0-Bcb"/>
+                    </constraints>
+                    <state key="normal" title="Go To Blue"/>
+                    <connections>
+                        <action selector="loadBlueView:" destination="-1" eventType="touchUpInside" id="asY-hF-zqn"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="0.99540542809999999" green="1" blue="0.42615916279999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="G5B-ou-TSc" firstAttribute="top" secondItem="TAd-A5-dqE" secondAttribute="top" constant="156" id="S00-lG-Oyg"/>
+                <constraint firstItem="G5B-ou-TSc" firstAttribute="centerX" secondItem="TAd-A5-dqE" secondAttribute="centerX" id="Vkm-KZ-yh2"/>
+            </constraints>
             <point key="canvasLocation" x="431" y="297"/>
         </view>
     </objects>
