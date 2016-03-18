@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		945892C71C9C71C200762587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945892C61C9C71C200762587 /* AppDelegate.swift */; };
-		945892C91C9C71C200762587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945892C81C9C71C200762587 /* ViewController.swift */; };
-		945892CC1C9C71C200762587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945892CA1C9C71C200762587 /* Main.storyboard */; };
+		945892C91C9C71C200762587 /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945892C81C9C71C200762587 /* YellowViewController.swift */; };
 		945892CE1C9C71C200762587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945892CD1C9C71C200762587 /* Assets.xcassets */; };
 		945892D11C9C71C200762587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 945892CF1C9C71C200762587 /* LaunchScreen.storyboard */; };
+		945892D91C9C72A300762587 /* YellowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945892D81C9C72A300762587 /* YellowView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		945892C31C9C71C200762587 /* xib-training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xib-training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		945892C61C9C71C200762587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		945892C81C9C71C200762587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		945892CB1C9C71C200762587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		945892C81C9C71C200762587 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		945892CD1C9C71C200762587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		945892D01C9C71C200762587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		945892D21C9C71C200762587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945892D81C9C72A300762587 /* YellowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YellowView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		945892C51C9C71C200762587 /* xib-training */ = {
 			isa = PBXGroup;
 			children = (
+				945892DA1C9C73FD00762587 /* Model */,
+				945892DB1C9C740100762587 /* View */,
+				945892DC1C9C740600762587 /* Controller */,
 				945892C61C9C71C200762587 /* AppDelegate.swift */,
-				945892C81C9C71C200762587 /* ViewController.swift */,
-				945892CA1C9C71C200762587 /* Main.storyboard */,
 				945892CD1C9C71C200762587 /* Assets.xcassets */,
 				945892CF1C9C71C200762587 /* LaunchScreen.storyboard */,
 				945892D21C9C71C200762587 /* Info.plist */,
 			);
 			path = "xib-training";
+			sourceTree = "<group>";
+		};
+		945892DA1C9C73FD00762587 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		945892DB1C9C740100762587 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				945892D81C9C72A300762587 /* YellowView.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		945892DC1C9C740600762587 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				945892C81C9C71C200762587 /* YellowViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +120,7 @@
 				TargetAttributes = {
 					945892C21C9C71C200762587 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8VF4S3W85G;
 					};
 				};
 			};
@@ -123,8 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				945892D11C9C71C200762587 /* LaunchScreen.storyboard in Resources */,
+				945892D91C9C72A300762587 /* YellowView.xib in Resources */,
 				945892CE1C9C71C200762587 /* Assets.xcassets in Resources */,
-				945892CC1C9C71C200762587 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945892C91C9C71C200762587 /* ViewController.swift in Sources */,
+				945892C91C9C71C200762587 /* YellowViewController.swift in Sources */,
 				945892C71C9C71C200762587 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +168,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		945892CA1C9C71C200762587 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				945892CB1C9C71C200762587 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		945892CF1C9C71C200762587 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -251,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "xib-training/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanmcollins.xib-training";
@@ -262,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "xib-training/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ryanmcollins.xib-training";
